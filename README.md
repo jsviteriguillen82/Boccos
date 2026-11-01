@@ -20,7 +20,8 @@ Bot que atiende el WhatsApp Business de BOCCOS usando Claude: responde preguntas
 2. **WhatsApp Cloud API** (developers.facebook.com → crea una app tipo *Business* → producto *WhatsApp*):
    - Copia el *Phone number ID* y genera un *token permanente* (usuario del sistema en Business Manager).
    - Copia el *App Secret* (Configuración → Básica).
-   - Nota: un número ya usado en la app de WhatsApp Business del celular debe migrarse a la API (o usa un número nuevo).
+   - Número del bot: **+593 98 784 3771** (el WhatsApp oficial de BOCCOS). Si hoy se usa en la app de WhatsApp o WhatsApp Business del celular, hay que registrarlo en la Cloud API; desde ese momento deja de funcionar en la app del celular y todas las conversaciones pasan por el bot.
+   - `OWNER_PHONE` debe ser **otro** número (por ejemplo tu celular personal), en formato `5939XXXXXXXX`.
 3. **Claude**: crea una API key en platform.claude.com.
 4. Copia `.env.example` a `.env` y completa los valores.
 5. Ejecuta:

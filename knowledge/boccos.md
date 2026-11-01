@@ -10,8 +10,8 @@
 - Hechos en **Playa Prieta, Portoviejo (Manabí, Ecuador)**, en planta propia con certificación de Buenas Prácticas de Manufactura (BPM, 0029-BPM-AN-0326).
 - Cultivamos cerca del **80 % de nuestra materia prima** en fincas propias ("Playa Prieta" y "La Tierrita"): de la finca a tu mesa, sin intermediarios.
 - Todos los productos son **sin gluten**.
-- Contacto oficial: correo **ventas@boccocitos.com** · Instagram **@boccocitos** · Facebook **Boccocitos** · web **www.boccocitos.com**
-- Teléfono: no compartas ningún número de teléfono; el cliente ya está escribiendo al WhatsApp oficial de BOCCOS.
+- Contacto oficial: WhatsApp y teléfono **098 784 3771** (desde el exterior: **+593 98 784 3771**) · correo **ventas@boccocitos.com** · Instagram **@boccocitos** · Facebook **Boccocitos** · web **www.boccocitos.com**
+- Este WhatsApp (098 784 3771) es el mismo número por el que el cliente está escribiendo ahora. Si quiere pasárselo a otra persona (un amigo, el dueño de un negocio), compártelo. No des ningún otro número de teléfono.
 
 ## Dónde comprar (consumidor final)
 Los productos se venden congelados en estos puntos:
