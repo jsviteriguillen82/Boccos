@@ -5,12 +5,13 @@ Bot que atiende el WhatsApp Business de BOCCOS usando Claude: responde preguntas
 ## Qué hace
 - **Ventas**: responde con el catálogo, precios y promociones de `knowledge/boccos.md` y registra leads.
 - **Soporte**: envíos, cambios, devoluciones y preguntas frecuentes según tus políticas.
-- **Escalamiento a humano**: ante reclamos, pagos, consultas de pedidos o datos que no tiene, te avisa por WhatsApp con un resumen y deja de responder a ese cliente hasta que lo devuelvas al bot.
+- **Escalamiento a humano**: ante reclamos, pagos, consultas de pedidos o datos que no tiene, deja de responder a ese cliente y te deja el caso (lo ves en la app con coexistencia, o te avisa a `OWNER_PHONE`). Vuelve a atender solo tras `HUMAN_PAUSE_HOURS`.
 - **No inventa**: solo usa lo que está en la base de conocimiento.
 
 ## Cómo intervienes tú
 - **Con coexistencia (recomendado):** respondes al cliente desde la app WhatsApp Business del 098 784 3771 y el bot se aparta solo.
 - **Con un segundo número (`OWNER_PHONE`, opcional):** recibes avisos y puedes usar estos comandos:
+
 | Comando | Acción |
 |---|---|
 | `/r 5939XXXXXXXX Hola, ya revisé tu pedido…` | Responder al cliente como BOCCOS |
@@ -18,7 +19,7 @@ Bot que atiende el WhatsApp Business de BOCCOS usando Claude: responde preguntas
 | `/bot 5939XXXXXXXX` | Devolver la conversación al bot |
 
 ## Puesta en marcha
-1. **Llena `knowledge/boccos.md`** con la información real de BOCCOS (lo más importante).
+1. **Revisa `knowledge/boccos.md`**: ya tiene la información de boccocitos.com y del catálogo 2026; actualízala cuando cambien precios o puntos de venta.
 2. **WhatsApp Cloud API** (developers.facebook.com → crea una app tipo *Business* → producto *WhatsApp*):
    - Copia el *Phone number ID* y genera un *token permanente* (usuario del sistema en Business Manager).
    - Copia el *App Secret* (Configuración → Básica).
