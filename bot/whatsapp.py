@@ -78,3 +78,20 @@ def extract_messages(payload: dict) -> list[dict]:
                     }
                 )
     return out
+
+
+def extract_echoes(payload: dict) -> list[dict]:
+    """Mensajes que el equipo envió desde la app de WhatsApp Business (coexistencia,
+    webhook `smb_message_echoes`). Devuelve [{id, to, text}]."""
+    out = []
+    for entry in payload.get("entry", []):
+        for change in entry.get("changes", []):
+            if change.get("field") != "smb_message_echoes":
+                continue
+            for msg in change.get("value", {}).get("message_echoes", []):
+                if msg.get("type") == "text":
+                    text = msg.get("text", {}).get("body", "")
+                else:
+                    text = f"[envió un mensaje de tipo '{msg.get('type')}']"
+                out.append({"id": msg.get("id"), "to": msg.get("to"), "text": text})
+    return out

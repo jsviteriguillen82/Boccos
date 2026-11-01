@@ -8,7 +8,9 @@ Bot que atiende el WhatsApp Business de BOCCOS usando Claude: responde preguntas
 - **Escalamiento a humano**: ante reclamos, pagos, consultas de pedidos o datos que no tiene, te avisa por WhatsApp con un resumen y deja de responder a ese cliente hasta que lo devuelvas al bot.
 - **No inventa**: solo usa lo que está en la base de conocimiento.
 
-## Comandos del dueño (desde el número `OWNER_PHONE`)
+## Cómo intervienes tú
+- **Con coexistencia (recomendado):** respondes al cliente desde la app WhatsApp Business del 098 784 3771 y el bot se aparta solo.
+- **Con un segundo número (`OWNER_PHONE`, opcional):** recibes avisos y puedes usar estos comandos:
 | Comando | Acción |
 |---|---|
 | `/r 5939XXXXXXXX Hola, ya revisé tu pedido…` | Responder al cliente como BOCCOS |
@@ -20,8 +22,10 @@ Bot que atiende el WhatsApp Business de BOCCOS usando Claude: responde preguntas
 2. **WhatsApp Cloud API** (developers.facebook.com → crea una app tipo *Business* → producto *WhatsApp*):
    - Copia el *Phone number ID* y genera un *token permanente* (usuario del sistema en Business Manager).
    - Copia el *App Secret* (Configuración → Básica).
-   - Número del bot: **+593 98 784 3771** (el WhatsApp oficial de BOCCOS). Si hoy se usa en la app de WhatsApp o WhatsApp Business del celular, hay que registrarlo en la Cloud API; desde ese momento deja de funcionar en la app del celular y todas las conversaciones pasan por el bot.
-   - `OWNER_PHONE` debe ser **otro** número (por ejemplo tu celular personal), en formato `5939XXXXXXXX`.
+   - Número del bot: **+593 98 784 3771** (el WhatsApp oficial de BOCCOS).
+   - **Recomendado: conéctalo en modo _coexistencia_** (en el registro, elige conectar un número que ya usa la app WhatsApp Business). Así el número sigue funcionando en el celular: ves todos los chats y puedes responder desde la app. Suscribe el webhook también al campo `smb_message_echoes`.
+   - Cuando alguien del equipo responde desde la app, el bot se calla con ese cliente durante `HUMAN_PAUSE_HOURS` (12 h por defecto) y luego vuelve a atender.
+   - `OWNER_PHONE` es opcional y debe ser **otro** número: el bot no puede enviarse avisos a sí mismo. Con coexistencia, los casos escalados los ves directamente en la app.
 3. **Claude**: crea una API key en platform.claude.com.
 4. Copia `.env.example` a `.env` y completa los valores.
 5. Ejecuta:

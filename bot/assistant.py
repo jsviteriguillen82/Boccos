@@ -109,8 +109,8 @@ def reply(phone: str, customer_name: str, text: str) -> str | None:
     messages, takeover = store.load_conversation(phone)
     messages.append({"role": "user", "content": text})
     if takeover:
-        # Una persona está atendiendo: solo guardamos el mensaje.
-        store.save_conversation(phone, messages, human_takeover=True)
+        # Una persona está atendiendo: solo guardamos el mensaje (sin alargar la pausa).
+        store.save_conversation(phone, messages, human_takeover=None)
         return None
 
     system = _system_prompt()
@@ -166,6 +166,14 @@ def reply(phone: str, customer_name: str, text: str) -> str | None:
 
     store.save_conversation(phone, messages, human_takeover=escalated)
     return final_text or None
+
+
+def record_human_reply(phone: str, text: str) -> None:
+    """Alguien del equipo respondió desde la app de WhatsApp Business (coexistencia):
+    el bot guarda la respuesta como contexto y se calla con ese cliente por un tiempo."""
+    messages, _ = store.load_conversation(phone)
+    messages.append({"role": "user", "content": f"[Nota interna: el equipo de BOCCOS respondió al cliente desde la app: {text}]"})
+    store.save_conversation(phone, messages, human_takeover=True)
 
 
 def handle_owner_command(text: str) -> str:

@@ -61,3 +61,28 @@ def test_reply_with_escalation(env, monkeypatch):
 def test_duplicate_detection(env):
     assert env.store.already_processed("x") is False
     assert env.store.already_processed("x") is True
+
+
+def test_coexistence_echo_pauses_bot(env, monkeypatch):
+    from bot.whatsapp import extract_echoes
+    payload = {"entry": [{"changes": [{"field": "smb_message_echoes", "value": {
+        "message_echoes": [{"id": "e1", "from": "593987843771", "to": "333",
+                            "type": "text", "text": {"body": "Hola, te atiendo yo"}}]}}]}]}
+    echoes = extract_echoes(payload)
+    assert echoes == [{"id": "e1", "to": "333", "text": "Hola, te atiendo yo"}]
+    env.assistant.record_human_reply("333", echoes[0]["text"])
+    monkeypatch.setattr(env.assistant.client.beta.messages, "create",
+                        lambda **kw: pytest.fail("el bot no debe responder"))
+    assert env.assistant.reply("333", "Luis", "Gracias") is None
+
+
+def test_pause_expires(env, monkeypatch):
+    import time
+    env.store.save_conversation("444", [], human_takeover=True)
+    assert env.store.load_conversation("444")[1] is True
+    # Mensajes del cliente durante la pausa no la alargan
+    env.store.save_conversation("444", [{"role": "user", "content": "x"}], human_takeover=None)
+    real = time.time
+    monkeypatch.setattr(time, "time", lambda: real() + env.config.HUMAN_PAUSE_HOURS * 3600 + 5)
+    monkeypatch.setattr(env.config, "CONVERSATION_TTL_HOURS", 1000)
+    assert env.store.load_conversation("444")[1] is False

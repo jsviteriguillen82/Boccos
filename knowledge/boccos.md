@@ -1,24 +1,23 @@
 # BOCCOS / Boccocitos — Base de conocimiento del asistente
 
-> Fuentes: "Cátalogo 2026 Boccocitos", "BOCCOS Notas", "EMPRESA BOCCOS" y el brief de la campaña Portoviejo (Google Drive, oct–nov 2026).
+> Fuentes: boccocitos.com (revisada el 01-11-2026, manda sobre lo demás), "Cátalogo 2026 Boccocitos", "BOCCOS Notas" y "EMPRESA BOCCOS" (Google Drive).
 > El asistente SOLO responde con lo que está aquí. Si un dato no está, escala a una persona.
 > Edita este archivo cuando cambien precios, puntos de venta o promociones; el bot lo relee en cada mensaje.
 
 ## Quiénes somos
 - **BOCCOS** (los productos y redes usan el nombre **Boccocitos**). Lema: *"¡Sabor que te abraza!"*
-- Empresa familiar ecuatoriana (razón social VIMAE S.A.S.) que produce bocaditos tradicionales **congelados**, listos en minutos, a base de plátano verde, maduro y yuca.
+- Empresa familiar ecuatoriana (VIMAE S.A.S., RUC 1391935886001) que produce bocaditos tradicionales de yuca y plátano verde y maduro, **cosechados en Manabí, cocinados a fuego de verdad, congelados al instante (IQF)** y empacados con certificación BPM. Se preparan en minutos en airfryer, horno o sartén.
 - Hechos en **Playa Prieta, Portoviejo (Manabí, Ecuador)**, en planta propia con certificación de Buenas Prácticas de Manufactura (BPM, 0029-BPM-AN-0326).
 - Cultivamos cerca del **80 % de nuestra materia prima** en fincas propias ("Playa Prieta" y "La Tierrita"): de la finca a tu mesa, sin intermediarios.
 - Todos los productos son **sin gluten**.
-- Contacto oficial: WhatsApp y teléfono **098 784 3771** (desde el exterior: **+593 98 784 3771**) · correo **ventas@boccocitos.com** · Instagram **@boccocitos** · Facebook **Boccocitos** · web **www.boccocitos.com**
+- Las fotos de la web son referenciales; la información que manda es la del **empaque** de cada producto.
+- Contacto oficial: WhatsApp y teléfono **098 784 3771** (desde el exterior: **+593 98 784 3771**) · correo **ventas@boccocitos.com** · redes **@boccocitos** (Instagram, Facebook, TikTok, YouTube, LinkedIn) · web **boccocitos.com** · dirección: Playa Prieta, Portoviejo, Manabí
 - Este WhatsApp (098 784 3771) es el mismo número por el que el cliente está escribiendo ahora. Si quiere pasárselo a otra persona (un amigo, el dueño de un negocio), compártelo. No des ningún otro número de teléfono.
 
-## Dónde comprar (consumidor final)
-Los productos se venden congelados en estos puntos:
-- **Portoviejo:** Canuto Supermercados · Supermercados Casanova (matriz y sucursal Tamarindo) · Comercial / Comisariato Gonzalo Zambrano (matriz y 2 sucursales) · Magna Deli Market
-- **Manta:** Supermercados Casanova Manta · Mercaluna Supermercados · Minimarket Ciudad del Sol
-- **Restaurante:** Cevichería Umiña (Manta) los sirve en su menú.
-- Mapa de puntos de venta: https://www.google.com/maps/d/viewer?mid=1AgiK4EHdw7HSgRgO3pHlc9OKWZ_30Bc
+## Dónde comprar
+1. **Supermercados:** Comisariato Gonzalo Zambrano · Magna · Canuto · Mercaluna · Supermercados Casanova — **en todas sus sucursales** (Portoviejo y Manta).
+   Mapa de puntos de venta: https://www.google.com/maps/d/viewer?mid=1AgiK4EHdw7HSgRgO3pHlc9OKWZ_30Bc
+2. **Pedido por WhatsApp (este chat):** la web invita a "Pedir por WhatsApp" cada producto. Ver "Cómo tomar un pedido".
 - **Guayaquil:** todavía no hay puntos de venta confirmados (hay ingresos en proceso). No prometas fechas; ofrece avisar al cliente registrando sus datos como lead.
 - El stock de cada local no lo vemos en tiempo real: si preguntan si hay en una sucursal concreta, sugiere el mapa y, si insisten, escala.
 
@@ -70,7 +69,7 @@ Ideales como guarnición o complemento (como unas papas fritas, pero de verde, m
 | Pan de yuca / Mini bolón de verde / Mini bolón de maduro / Mini muchín de yuca | 500 g | $3,50 |
 | María Pipona de verde / de maduro / Muchines gourmet | 400 g | $3,60 |
 | Boccocitos de verde / maduro / yuca | 2 kg | $6,50 – $7,50 |
-- Son precios **sugeridos**: cada supermercado define su precio final (más IVA).
+- Son precios **sugeridos**: según la web, precio y disponibilidad dependen de cada punto de venta y pueden cambiar sin aviso.
 - Las presentaciones de 1 kg no tienen PVP publicado: si preguntan, escala.
 
 ## Negocios: tiendas, distribuidores, restaurantes, hoteles, catering (B2B)
@@ -79,15 +78,18 @@ Ideales como guarnición o complemento (como unas papas fritas, pero de verde, m
 - Presentaciones para negocios: cajas de 10 kg (tradicionales 20 fundas de 500 g; gourmet 25 unidades; Boccocitos 5 fundas de 2 kg).
 - Los Boccocitos también están en el catálogo de foodservice de **AXIONLOG**.
 
-## Venta directa y envíos a domicilio
-- Por ahora la compra para consumidor final es **en los supermercados** listados arriba.
-- Si alguien quiere comprar directo a BOCCOS, pedir a domicilio o en cantidad para un evento: toma sus datos (nombre, ciudad, productos, cantidad, fecha) con registrar_lead y **escala a una persona**; no confirmes precios, entregas ni costos de envío.
+## Cómo tomar un pedido por WhatsApp
+- En la web no se compra ni se paga en línea: **los pedidos se coordinan por este WhatsApp** y las condiciones (precio final, entrega, pago) se acuerdan en cada caso con el equipo.
+- Cuando alguien quiera pedir, reúne de forma conversacional (una pregunta a la vez): **producto(s) y cantidad**, **nombre**, **ciudad y sector/dirección**, si es para **casa o negocio**, y para cuándo lo necesita.
+- Luego usa registrar_lead con esos datos y escalar_a_humano con motivo `pedido_cliente`, y dile al cliente que el equipo le confirma enseguida **precio, entrega y forma de pago**.
+- Puedes adelantar el PVP sugerido como referencia, aclarando que el equipo confirma el valor final. **No confirmes** costos ni tiempos de envío, ni stock.
+- Si prefiere comprar ya mismo, recuérdale los supermercados y el mapa.
 
 ## Reclamos y calidad
 - Si un producto llegó dañado, descongelado, con mal sabor o el cliente tuvo algún problema: discúlpate con empatía, pide **qué producto, dónde lo compró, fecha de compra y lote/fecha de vencimiento** (y una foto si puede) y **escala** como reclamo. No ofrezcas reembolsos ni reposiciones por tu cuenta.
 
-## Horario de atención humana
-- No está definido en las fuentes: di que una persona del equipo responderá lo antes posible.
+## Horario de atención
+- Atendemos **todos los días**; la planta trabaja continuamente. Di que una persona del equipo confirmará lo antes posible (sin prometer minutos exactos).
 
 ## Cosas que el bot NO debe hacer
 - No inventar puntos de venta, stock, precios de 1 kg, precios mayoristas, plazos de entrega ni promociones (**no hay promociones vigentes registradas**).

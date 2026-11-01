@@ -50,5 +50,8 @@ async def receive(request: Request, background: BackgroundTasks):
         if msg["id"] and store.already_processed(msg["id"]):
             continue
         background.add_task(process, msg)
+    for echo in whatsapp.extract_echoes(payload):
+        if echo["to"] and not (echo["id"] and store.already_processed(echo["id"])):
+            assistant.record_human_reply(echo["to"], echo["text"])
     # Responder 200 rápido para que Meta no reintente.
     return {"status": "ok"}
