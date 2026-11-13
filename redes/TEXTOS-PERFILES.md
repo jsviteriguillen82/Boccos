@@ -42,10 +42,10 @@ Boccocitos de BOCCOS
 
 **Biografía** (menos de 150 caracteres):
 ```
-🫓 Los Boccocitos de BOCCOS: yuca y verde manabita
+🫓 Los Boccocitos de BOCCOS: yuca y verde de Manabí
 🌱 Sin gluten · listos en minutos
 🛒 Comisariato, Magna, Canuto, Mercaluna, Casanova
-👇 Pide por WhatsApp
+👇 Pide aquí
 ```
 
 **Enlaces:** 1) `https://wa.me/593987843771` (Pedidos por WhatsApp) · 2) `https://boccocitos.com`
