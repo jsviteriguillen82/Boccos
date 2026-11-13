@@ -60,7 +60,7 @@ const designs = [
       <img src="escena1.webp" style="position:absolute;right:0;top:0;height:624px;width:960px;object-fit:cover;object-position:40% 50%">
       <div style="position:absolute;right:0;top:0;width:960px;height:624px;background:linear-gradient(90deg,${C.crema} 0%,rgba(245,236,219,.0) 52%)"></div>
       <div style="position:absolute;left:200px;top:0;height:624px;width:860px;display:flex;flex-direction:column;justify-content:center;gap:26px">
-        <div style="font-weight:900;letter-spacing:.14em;color:${C.terracota};font-size:22px">HECHO EN MANABÍ · DE LA FINCA A TU MESA</div>
+        <div style="font-weight:900;letter-spacing:.14em;color:${C.terracota};font-size:22px">LOS BOCCOCITOS DE BOCCOS · HECHO EN MANABÍ</div>
         <div class="slab" style="font-weight:800;font-size:96px;line-height:.98;color:${C.carbon}">¡Sabor que<br>te abraza!</div>
         <div style="font-size:30px;font-weight:600;color:#4f4741;line-height:1.3">Mini bolones, muchines, pan de yuca y María Pipona:<br>del congelador a tu mesa en minutos.</div>
         <div class="chips" style="font-size:22px">
