@@ -2,11 +2,6 @@
 
 Todo usa el logo, los colores (terracota, verde, dorado, crema) y las tipografías de boccocitos.com. Los textos solo dicen cosas que están en la web y en la base de conocimiento del bot.
 
-## Cómo jugamos con las dos marcas
-- **BOCCOS** es la marca aprobada por el SENADI: va en el logo, los empaques y la línea "Somos BOCCOS".
-- **Boccocitos** es el nombre cariñoso de los productos y de la comunidad: usuario **@boccocitos**, nombre de los perfiles y forma de hablarle a la gente ("¿Ya probaste tus Boccocitos?").
-- La frase que une las dos: **"Los Boccocitos de BOCCOS"**.
-
 > **Regla de oro:** la misma foto de perfil, el mismo usuario **@boccocitos** y el mismo enlace en todas las redes. Así la gente reconoce la marca al instante.
 
 ---
@@ -34,18 +29,17 @@ Para cambiar algo (texto, foto, color): editar `redes/src/render.js` y ejecutar 
 
 **Nombre** (sale en búsquedas, máx. 30): 
 ```
-Boccocitos de BOCCOS
+Boccocitos | Bocaditos de yuca
 ```
-(Alternativa con palabra de búsqueda: `Boccocitos | BOCCOS 🫓 yuca`)
 
 **Categoría:** Empresa de alimentos y bebidas
 
-**Biografía** (menos de 150 caracteres):
+**Biografía** (143 de 150 caracteres):
 ```
-🫓 Los Boccocitos de BOCCOS: yuca y verde de Manabí
+🫓 Bocaditos de yuca y plátano de Manabí
 🌱 Sin gluten · listos en minutos
-🛒 Comisariato, Magna, Canuto, Mercaluna, Casanova
-👇 Pide aquí
+🛒 Comisariato, Magna, Canuto, Mercaluna y Casanova
+👇 Pide por WhatsApp
 ```
 
 **Enlaces:** 1) `https://wa.me/593987843771` (Pedidos por WhatsApp) · 2) `https://boccocitos.com`
@@ -58,11 +52,11 @@ Boccocitos de BOCCOS
 
 ## 3. TikTok (@boccocitos)
 
-**Nombre:** `Boccocitos de BOCCOS`
+**Nombre:** `Boccocitos`
 
-**Biografía** (menos de 80):
+**Biografía** (72 de 80):
 ```
-Los Boccocitos de BOCCOS 🫓 Yuca y plátano de Manabí · Sin gluten 👇
+Bocaditos de yuca y plátano de Manabí 🌱 Sin gluten · listos en minutos 👇
 ```
 
 **Enlace:** `https://boccocitos.com` (o el de WhatsApp si la cuenta de empresa lo permite).
@@ -71,9 +65,7 @@ Los Boccocitos de BOCCOS 🫓 Yuca y plátano de Manabí · Sin gluten 👇
 
 ## 4. Facebook (página Boccocitos)
 
-**Nombre de la página:** `Boccocitos de BOCCOS`
-
-**Presentación / Intro** (menos de 101):
+**Presentación / Intro** (92 de 101):
 ```
 ¡Sabor que te abraza! Bocaditos de yuca y plátano de Manabí, sin gluten y listos en minutos.
 ```
@@ -103,7 +95,7 @@ Somos BOCCOS, una empresa familiar de Manabí. Cultivamos cerca del 80 % de nues
 ```
 ¡Sabor que te abraza! 🫓
 
-Somos BOCCOS, la familia detrás de los Boccocitos: una empresa familiar de Manabí, Ecuador. Hacemos bocaditos tradicionales de yuca y plátano verde y maduro —mini bolones, muchines, pan de yuca y María Pipona— con materia prima de nuestras propias fincas, cocinados a fuego de verdad y congelados al instante.
+Somos Boccocitos (BOCCOS), una empresa familiar de Manabí, Ecuador. Hacemos bocaditos tradicionales de yuca y plátano verde y maduro —mini bolones, muchines, pan de yuca y María Pipona— con materia prima de nuestras propias fincas, cocinados a fuego de verdad y congelados al instante.
 
 Aquí encontrarás recetas, ideas para el desayuno y la lonchera, y cómo prepararlos en air fryer, horno o sartén. Todos nuestros productos son sin gluten.
 
